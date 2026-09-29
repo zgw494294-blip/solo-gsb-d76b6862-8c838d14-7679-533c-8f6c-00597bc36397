@@ -1,0 +1,8 @@
+services:
+  subtitle-tracks:
+    build: .
+    image: subtitle-track-api:latest
+    container_name: subtitle-track-api
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
